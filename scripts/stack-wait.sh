@@ -108,11 +108,6 @@ while [ "$stack_done" != "1" ]; do
       paused|rollback_paused)
         service_done=2
         ;;
-      rollback_*)
-        if [ "$opt_r" = "0" ]; then
-          service_done=2
-        fi
-        ;;
     esac
 
     # identify/report current state
